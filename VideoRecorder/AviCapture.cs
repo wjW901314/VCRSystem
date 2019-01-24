@@ -7,7 +7,8 @@ namespace VideoRecorder
 {
     public class AviCapture
     {
-        [DllImport("avicap32.dll")] //包含了执行视频捕获的函数，它给AVI文件I/O和视频、音频设备驱动程序提供一个高级接口
+        //包含了执行视频捕获的函数，它给AVI文件I/O和视频、音频设备驱动程序提供一个高级接口
+        [DllImport("avicap32.dll")] 
         public static extern IntPtr capCreateCaptureWindow(string lpszWindowName, int dwStyle, int x, int y, int nWidth,
             int nHeight, IntPtr hwndParent, int nID);
 
