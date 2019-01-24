@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recorder", "Recorder\Recorder.csproj", "{1D12A384-06CB-494B-825E-E80942054CB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeWave", "MergeWave\MergeWave.csproj", "{D2218A39-02A9-4FCA-B7F0-118688C40034}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoRecorder", "VideoRecorder\VideoRecorder.csproj", "{200EEF45-1814-4266-8932-6C422368194F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D12A384-06CB-494B-825E-E80942054CB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D12A384-06CB-494B-825E-E80942054CB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D12A384-06CB-494B-825E-E80942054CB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D12A384-06CB-494B-825E-E80942054CB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2218A39-02A9-4FCA-B7F0-118688C40034}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2218A39-02A9-4FCA-B7F0-118688C40034}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2218A39-02A9-4FCA-B7F0-118688C40034}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2218A39-02A9-4FCA-B7F0-118688C40034}.Release|Any CPU.Build.0 = Release|Any CPU
+		{200EEF45-1814-4266-8932-6C422368194F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{200EEF45-1814-4266-8932-6C422368194F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{200EEF45-1814-4266-8932-6C422368194F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{200EEF45-1814-4266-8932-6C422368194F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B2F66DD-EF97-43C9-B4AF-95277D8AC79A}
+	EndGlobalSection
+EndGlobal
