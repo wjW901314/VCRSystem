@@ -87,11 +87,11 @@ namespace Demo
             FileInfo fileInfo = new FileInfo(file);
             if (fileInfo.Length > splitMinFileSize)
             {
-                Console.WriteLine("判定结果：需要分隔文件！");
+                Console.WriteLine(@"判定结果：需要分隔文件！");
             }
             else
             {
-                Console.WriteLine("判定结果：不需要分隔文件！");
+                Console.WriteLine(@"判定结果：不需要分隔文件！");
                 Console.ReadKey();
                 return;
             }
@@ -106,8 +106,8 @@ namespace Demo
                     while (!isReadingComplete)
                     {
                         string filePath = string.Format(splitFileFormat, couter);
-                        Console.WriteLine("开始读取文件【{1}】：{0}", filePath,
-                            DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff"));
+                        Console.WriteLine(@"开始读取文件【{1}】：{0}", filePath,
+                            DateTime.Now.ToString(@"yyyy-MM-dd HH:mm:ss.fff"));
 
                         byte[] input = br.ReadBytes(splitFileSize);
                         using (FileStream writeFs = new FileStream(filePath, FileMode.Create))
@@ -125,7 +125,7 @@ namespace Demo
                         }
 
                         Console.WriteLine(@"完成读取文件【{1}】：{0}", filePath,
-                            DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff"));
+                            DateTime.Now.ToString(@"yyyy-MM-dd HH:mm:ss.fff"));
                     }
                 }
             }
