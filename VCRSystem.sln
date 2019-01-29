@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeWave", "MergeWave\Merg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoRecorder", "VideoRecorder\VideoRecorder.csproj", "{200EEF45-1814-4266-8932-6C422368194F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{DC9EB021-CBB8-4C89-945D-0E8FF3413787}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{200EEF45-1814-4266-8932-6C422368194F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{200EEF45-1814-4266-8932-6C422368194F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{200EEF45-1814-4266-8932-6C422368194F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC9EB021-CBB8-4C89-945D-0E8FF3413787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC9EB021-CBB8-4C89-945D-0E8FF3413787}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC9EB021-CBB8-4C89-945D-0E8FF3413787}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC9EB021-CBB8-4C89-945D-0E8FF3413787}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
