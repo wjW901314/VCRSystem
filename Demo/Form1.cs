@@ -124,14 +124,14 @@ namespace Demo
                             couter += 1;
                         }
 
-                        Console.WriteLine("完成读取文件【{1}】：{0}", filePath,
+                        Console.WriteLine(@"完成读取文件【{1}】：{0}", filePath,
                             DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff"));
                     }
                 }
             }
 
 
-            Console.WriteLine("分隔完成，请按下任意键结束操作。。。");
+            Console.WriteLine(@"分隔完成，请按下任意键结束操作。。。");
         }
 
       
