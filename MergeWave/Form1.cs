@@ -1,17 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using NAudio.MediaFoundation;
+using NAudio.Wave;
+using System;
 using System.Diagnostics;
-using System.Drawing;
-using System.IO;
-using System.Text;
 using System.Windows.Forms;
 
 namespace MergeWave
 {
     public partial class Form1 : Form
     {
+         public int currentCount = 0;
+
         public Form1()
         {
             InitializeComponent();
@@ -57,12 +55,12 @@ namespace MergeWave
 
         private void button4_Click(object sender, EventArgs e)
         {
-            WavMergeUtil.MergeWav(_filePaths,"MG_" + CommonUtil.GetTimeStamp() + ".wav");
+            WavMergeUtil.MergeWav(_filePaths, "MG_" + CommonUtil.GetTimeStamp() + ".wav");
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            WAVFile.MergeAudioFiles(_filePaths,"HY_" + CommonUtil.GetTimeStamp() + ".wav",
+            WAVFile.MergeAudioFiles(_filePaths, "HY_" + CommonUtil.GetTimeStamp() + ".wav",
                 "waveTest");
         }
 
@@ -70,6 +68,56 @@ namespace MergeWave
         {
             //_outputFolder = Path.Combine(Path.GetTempPath(), "MargeWaveDemo");
             //Directory.CreateDirectory(_outputFolder);
+
+            //设置Timer控件可用
+            this.timer.Enabled = true;
+            //设置时间间隔（毫秒为单位）
+            this.timer.Interval = 1000;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "WAV Files (*.wav)|*.wav|All Files (*.*)|*.*";
+            openFileDialog.FilterIndex = 1;
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                var inputFileName = openFileDialog.FileName;
+                var outputFileName = inputFileName.Substring(0, inputFileName.Length - 3) + "mp3";
+
+                var mediaType = MediaFoundationEncoder.SelectMediaType(
+                    AudioSubtypes.MFAudioFormat_MP3,
+                    new WaveFormat(44100, 1),
+                    0);
+
+                using (var reader = new MediaFoundationReader(inputFileName))
+                {
+                    using (var encoder = new MediaFoundationEncoder(mediaType))
+                    {
+                        encoder.Encode(outputFileName, reader);
+                    }
+                }
+            }
+
+            MessageBox.Show("操作成功");
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            //this.timer.Start();
+            Form2 form2 = new Form2();
+            form2.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            this.timer.Stop();
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            currentCount += 1;
+            this.label4.Text = currentCount.ToString().Trim();
         }
     }
 }

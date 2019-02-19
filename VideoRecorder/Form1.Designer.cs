@@ -40,6 +40,7 @@
             this.btnExist = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new AForge.Controls.PictureBox();
+            this.videoSourcePlayer1 = new AForge.Controls.VideoSourcePlayer();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,7 +67,7 @@
             this.labTime.AutoSize = true;
             this.labTime.Location = new System.Drawing.Point(358, 481);
             this.labTime.Name = "labTime";
-            this.labTime.Size = new System.Drawing.Size(0, 14);
+            this.labTime.Size = new System.Drawing.Size(42, 14);
             this.labTime.TabIndex = 5;
             this.labTime.Text = "计时:";
             // 
@@ -151,15 +152,25 @@
             this.pictureBox1.Image = null;
             this.pictureBox1.Location = new System.Drawing.Point(12, 1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1063, 451);
+            this.pictureBox1.Size = new System.Drawing.Size(339, 451);
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
+            // 
+            // videoSourcePlayer1
+            // 
+            this.videoSourcePlayer1.Location = new System.Drawing.Point(485, 65);
+            this.videoSourcePlayer1.Name = "videoSourcePlayer1";
+            this.videoSourcePlayer1.Size = new System.Drawing.Size(353, 213);
+            this.videoSourcePlayer1.TabIndex = 16;
+            this.videoSourcePlayer1.Text = "videoSourcePlayer1";
+            this.videoSourcePlayer1.VideoSource = null;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1087, 675);
+            this.Controls.Add(this.videoSourcePlayer1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnExist);
@@ -194,6 +205,7 @@
         private System.Windows.Forms.Button btnExist;
         private System.Windows.Forms.Label label5;
         private AForge.Controls.PictureBox pictureBox1;
+        private AForge.Controls.VideoSourcePlayer videoSourcePlayer1;
     }
 }
 
