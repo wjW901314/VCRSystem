@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Videos", "Videos\Videos.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{F91A6771-56D7-4A33-8F36-26AD5712E18A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{DC9EB021-CBB8-4C89-945D-0E8FF3413787}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{200EEF45-1814-4266-8932-6C422368194F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{200EEF45-1814-4266-8932-6C422368194F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{200EEF45-1814-4266-8932-6C422368194F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC9EB021-CBB8-4C89-945D-0E8FF3413787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC9EB021-CBB8-4C89-945D-0E8FF3413787}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC9EB021-CBB8-4C89-945D-0E8FF3413787}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC9EB021-CBB8-4C89-945D-0E8FF3413787}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B0A0D242-FE9A-44B9-A17E-B9282C973C14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B0A0D242-FE9A-44B9-A17E-B9282C973C14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0A0D242-FE9A-44B9-A17E-B9282C973C14}.Release|Any CPU.ActiveCfg = Release|Any CPU
